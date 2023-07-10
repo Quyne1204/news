@@ -28,7 +28,7 @@ if(userActive){
             displayNews(data);
 
         }catch(err){
-            alert("Error: " + err.massage);
+            alert("Error: Link bi loi roi");
         }
     }
 
