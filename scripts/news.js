@@ -18,11 +18,11 @@ if(userActive){
             const data = await res.json();
             console.log(data);
             if(data.status==="error" && data.code === "rateLimited"){
-                alert("link API bi loi")
+                alert("link API bi loi");
             }
             
             if(data.status==="error" && data.code === "corsNotAllowed"){
-                throw new Error(data.massage);
+                alert("link API bi loi");
             }
             
             displayNews(data);
