@@ -12,8 +12,8 @@ if(userActive){
 
     async function getDataNews(country,page){
         try{
-            const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${userActive.category}&pageSize=${userActive.pageSize}&page=${page}&apiKey=3be8b4994eb442d3beda90d9dcece7c4`);
-            // const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${userActive.category}&pageSize=${userActive.pageSize}&page=${page}&apiKey=17ac8f18709141258511d7f50c02a5da`);
+            // const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${userActive.category}&pageSize=${userActive.pageSize}&page=${page}&apiKey=3be8b4994eb442d3beda90d9dcece7c4`);
+            const res = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}&category=${userActive.category}&pageSize=${userActive.pageSize}&page=${page}&apiKey=17ac8f18709141258511d7f50c02a5da`);
 
             const data = await res.json();
             console.log(data);
